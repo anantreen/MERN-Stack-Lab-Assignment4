@@ -140,19 +140,11 @@ curl -X DELETE http://localhost:8000/api/notes/<NOTE_ID>
 - Defensive client/server error handling
 
 ## Screenshot Requirements Before Submission
-The evaluator requires real visual proof. After running the application locally, capture these two screenshots and save them in `screenshots/`:
 
 1. `ui-preview.png` — browser view showing at least two rendered notes.
+
+![alt text](screenshots/ui-preview.png)
+
 2. `delete-action.png` — browser view after deleting a note, with DevTools **Network** tab visibly showing a successful `200 OK` for `DELETE /api/notes/:id`.
 
-Do not submit fake or placeholder screenshots.
-
-## Packaging
-Do **not** include `node_modules/` or `dist/`.
-
-From the directory containing `notes-app/`, create the final submission archive:
-
-```bash
-zip -r StudentID_MERN_Lab.zip notes-app \
-  -x "*/node_modules/*" "*/dist/*" ".DS_Store"
-```
+![alt text](screenshots/delete-action.png)
