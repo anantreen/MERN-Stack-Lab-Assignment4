@@ -2,9 +2,9 @@
 
 ## Candidate Details
 - **Name:** ANANT PREET SINGH REEN
-- **Student ID / Roll No.:** 2026201026
-- **Course/Lab:** MERN Stack Lab Activity
-- **GitHub Repository:** ADD YOUR GITHUB REPOSITORY LINK
+- **Roll No.:** 2026201026
+- **Lab Assignment 4:** MERN Stack Lab Activity
+- **GitHub Repository:** https://github.com/anantreen/MERN-Stack-Lab-Assignment4
 
 ## Objective
 This project is a decoupled MERN notes application demonstrating React state management, RESTful API design, asynchronous MongoDB persistence through Mongoose, CORS-enabled client/server communication, and immediate UI reconciliation after create/delete operations.
@@ -102,7 +102,7 @@ http://localhost:5173
 ### Create a note
 
 ```bash
-curl -X POST http://localhost:5000/api/notes \
+curl -X POST http://localhost:8000/api/notes \
   -H "Content-Type: application/json" \
   -d '{"title":"MERN Lab","content":"Testing note creation"}'
 ```
@@ -110,20 +110,20 @@ curl -X POST http://localhost:5000/api/notes \
 ### Get all notes
 
 ```bash
-curl http://localhost:5000/api/notes
+curl http://localhost:8000/api/notes
 ```
 
 ### Delete a note
 Replace `<NOTE_ID>` with an actual MongoDB `_id` returned by GET/POST.
 
 ```bash
-curl -X DELETE http://localhost:5000/api/notes/<NOTE_ID>
+curl -X DELETE http://localhost:8000/api/notes/<NOTE_ID>
 ```
 
 ## Implemented Functional Requirements
 - Mongoose schema with required `title` and `content`
 - `createdAt` defaults to `Date.now`
-- Express server on port `5000`
+- Express server on port `8000`
 - Explicit `cors()` middleware
 - `express.json()` request-body parsing
 - POST/GET/DELETE REST routes
@@ -156,5 +156,3 @@ From the directory containing `notes-app/`, create the final submission archive:
 zip -r StudentID_MERN_Lab.zip notes-app \
   -x "*/node_modules/*" "*/dist/*" ".DS_Store"
 ```
-
-Rename `StudentID` to your actual student ID before submission.
